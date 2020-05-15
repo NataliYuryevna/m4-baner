@@ -30,15 +30,14 @@
     }  
     .banner {
       min-height: 150px;
-      height: auto;
       opacity:1;
       animation: 4s linear animationBanner;
       z-index: 1031;
     }
     @keyframes animationBanner {
-      0% { opacity: 0; min-height: 0;}
-      75% { opacity: 0; min-height: 0;}
-      100% { opacity: 1; min-height: 150px;}
+      0% { opacity: 0; top: -150px}
+      75% { opacity: 0; top:-150px}
+      100% { opacity: 1; top: 0;}
     }
     @keyframes animationHeight {
       0% { height: 0; }
