@@ -24,15 +24,24 @@
     .navbar-fixed-top {
       top: auto;
     }
+    .banner {
+      opacity:0;
+      animation: 3s linear 1s animationBanner;
+    }
+    @keyframes animationBanner {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
   </style>
   
 
 </head>
 <body>
   <!-- начало тега для баннера -->
-  <div style="min-height: 84px; position: relative;">
-    <div class="banner align-center" style="position:fixed; top: 0; left: 0; background: #fff; padding: 1rem; width: 100%; z-index: 1030;">
-      <p class="mbr-text mbr-fonts-style display-5" style="margin: 0; display: inline-block;">This site is temporary</p><a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">Learn More</a>
+  <div style="height: 84px;" class="container-banner">
+    <div class="banner align-center d-flex align-items-center" style="position:fixed; top: 0; left: 0; background: #fff; padding: 1rem; width: 100%; z-index: 1030; height: 84px;">
+      <p class="mbr-text mbr-fonts-style display-7" style="margin: 0;">Warning: This temporarily published website will be removed after one month of inactivity. To avoid removal connect your own domain. <br>
+This site was created with Mobirise Free Website Builder. </p><a class="btn btn-sm btn-primary display-4" href="https://mobirise.com/how-to/make-your-own-website/">Create Your Website!</a>
     </div>
   </div>
   <!-- конец тега для баннера -->
